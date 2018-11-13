@@ -14,7 +14,7 @@
 */
 
 /* HTML Styles */
-/* This set of code  */
+/* This set of code sets the html to have a background of a certain image that you choose. The fix makes it so when you scroll the image doesn't move. And the center centers the image. */
 html {
     background: url(cf_back1.png) fixed center;
     background-size: 100%;
@@ -22,48 +22,55 @@ html {
 
 
 /* Body Styles */
+/* This set of code sets the the body to have a background color of the certain rgba you give it. */
 body {
     background-color: rgba(255, 255, 255, 0.3);
 }
 
 
 /* Body Header Styles */
+/* This code sets the header in the body to have a background color of whatever rgba you give it. */
 body header {
     background-color: rgba(51, 51, 51, 0.5);
 }
 
 
 /* Aside Styles */
+/* This set of code sets the aside in the section to have a 10 pixel double border with the certain color you give it. It also gives it a border radius of 30 pixels. */
 section aside {
     border: 10px double rgba(92, 42, 8, 0.3);
     border-radius: 30px;
 }
 
+/* This set of code sets the h1 thats in the aside thats in the seciton to have a top right and left border of 30 pixels. */
 section aside h1 {
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-
 }
 
+/* This set of code sets the id of left thats in the section to have a perspective of 450 pixels. */
 section#left {
     perspective: 450px;
 }
 
+/* This set of code sets the id of right thats in the section to have a perspective of 450 pixels. */
 section#right {
     perspective: 450px;
 }
 
+/* This set of code sets the aside thats in the id of left thats in the section to rotate along the y axis 25 degrees. */
 section#left aside {
     transform: rotateY(25deg);
 }
 
+/* This set of code sets the aside thats in the id of right thats in the section to rotate along the y axis -25 degrees. */
 section#right aside {
     transform: rotateY(-25deg);
 }
 
 
 /* Cube Styles */
-
+/* This set of code sets the id of cube in the div to have a certain position, margin, width, height and perspective. */
 div#cube {
     position: relative;
     margin: 180px 150px auto;
@@ -72,28 +79,35 @@ div#cube {
     perspective: 450px;
 }
 
+/* This set of code sets the class of cube_face thats in the div to have a certain position, width and height you want to give it. */
 div.cube_face {
     position: absolute;
     width: 400px;
     height: 400px;
 }
 
+/* This set of code sets the id of cube_front in the div to translate along the Z axis -50 pixels. */
 div#cube_front {
     transform: translateZ(-50px);
 }
 
+/* This set of code sets the id of cube_left in the div to translate across the X axis -200 pixels and rotate along the Y axis 90 degrees.  */
 div#cube_left {
     transform: translateX(-200px) rotateY(90deg);
 }
 
+/* This set of code sets the id of cube_right in the div to translate across the X axis 200 pixels and rotate along the Y axis 90 degrees. */
 div#cube_right {
     transform: translateX(200px) rotateY(90deg);
 }
 
+/* This set of code sets the id of cube_top in the div to translate across the Y axis -200 pixels and rotate along the X axis -90 degrees.*/
 
 div#cube_top {
     transform: translateY(-200px) rotateX(-90deg);
 }
+
+/* This set of code sets the id of cube_bottom in the div to translate across the Y axis 200 pixels and rotate along the X axis 90 degrees.*/
 
 div#cube_bottom {
     transform: translateY(200px) rotateX(90deg);
